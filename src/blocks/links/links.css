@@ -1,0 +1,6 @@
+.links {
+    width: calc(1245/1280*100vw);
+    padding: 20px 15px 0;
+    display: flex;
+    justify-content: space-between;
+}

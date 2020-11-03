@@ -1,0 +1,8 @@
+.links-list__link {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: calc(18.15/15);
+    min-width: 100%;
+}

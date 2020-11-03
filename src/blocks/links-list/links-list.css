@@ -1,0 +1,8 @@
+@import url(./__link/links-list__link.css);
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: calc(181/1245*100%);
+}
