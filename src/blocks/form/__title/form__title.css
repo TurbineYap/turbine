@@ -1,4 +1,4 @@
-.section__title {   
+.form__title{
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -6,5 +6,5 @@
     line-height: 1.2; /*36px;*/
     color: #000000;
     margin: 0;
-    padding: 0 0 19px;
+    padding: 0 0 64px;
 }

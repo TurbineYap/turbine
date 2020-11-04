@@ -27,27 +27,26 @@ function Main() {
                 <h2 className="section__title">
                     Тезисы
                 </h2>
-                <ul className="list section__list">
-                    <li className="list__item">Дети никогда не прекращают творить и круто стараться быть на них похожими в этом</li>
-                    <li className="list__item">Детское бессознательное помогает родителям понять, что происходит внутри семьи</li>
-                    <li className="list__item">Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней</li>
-                    <li className="list__item">Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми.</li>
+                <ul className="section__list">
+                    <li className="section__list-item">Дети никогда не прекращают творить и круто стараться быть на них похожими в этом</li>
+                    <li className="section__list-item">Детское бессознательное помогает родителям понять, что происходит внутри семьи</li>
+                    <li className="section__list-item">Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней</li>
+                    <li className="section__list-item">Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми.</li>
                 </ul>
             </section>
-            <section className="section main__section">
-                <h2 className="section__title">   </h2>
-                <form action="" className="main__form form">
-
-                    <input type="text" />
-                    <input type="email" />
-                    <input type="tel" />
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <checkbox></checkbox>
-                    <button>
-
-                    </button>
-                </form>
-            </section>
+            <form action="index.html" method="POST" className="main__form form">
+                <h2 className="form__title">Форма</h2>
+                <input type="text" id="name" required name="name" className="form__input" placeholder="Имя и фамилия автора"/>
+                <input type="email" id="email" required name="email" className="form__input" placeholder="Почта"/>
+                <input type="tel" id="name" required name="name" className="form__input" placeholder="Телефон"/>
+                <textarea name="" id="poem" required name="poem" cols="30" rows="10" className="form__input" placeholder="Стихи"></textarea>
+                
+                    <input type="checkbox" id="formCheckbox" required className="form__checkbox"/>
+                    <label htmlFor="formCheckbox" className="form__check-label">
+                        Согласен с <a href="#" className="form__link">офертой</a>
+                </label>       
+                <input type="submit" value="Отправить" className="form__btn"/>         
+            </form>
 
         </main>
     )

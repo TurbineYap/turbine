@@ -1,0 +1,23 @@
+.form__input{
+    width: 597px;
+    border-radius: 30px;
+    display: block;
+    border: solid #000000 2px;
+    padding: 19px 24px;
+    margin: 16px 0 0;
+}
+
+.form__input:active, .form__input:hover, .form__input:focus{   
+    outline: none;
+    border-radius: 30px;
+    border-color:#6e7090;
+}
+
+.form__input::placeholder{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;   
+    color: #000000;    
+}
