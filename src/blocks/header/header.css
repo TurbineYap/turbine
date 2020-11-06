@@ -2,7 +2,7 @@
 @import url(./__project-name/header__project-name.css);
 
 .header {
-    background-image: url(../../images/background-top.png);
+    /* background-image: url(../../images/background-top.png); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
