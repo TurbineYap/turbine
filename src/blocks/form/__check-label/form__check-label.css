@@ -1,0 +1,28 @@
+.form__check-label{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2/*22px*/;
+    color: #000000;
+    padding: 34px 0 34px 41px;
+    margin: 0;
+    display: block;
+    position: relative;    
+    max-width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+    .form__check-label {
+         font-size: 15px;
+         line-height: 1.47 /*22px*/;        
+     }
+}
+
+@media screen and (max-width: 420px) {
+    .form__check-label {
+         font-size: 12px;
+         line-height: 1.33 /*16px*/;  
+         padding: 20px 45px 0;      
+     }
+}

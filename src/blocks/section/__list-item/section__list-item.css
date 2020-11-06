@@ -1,0 +1,31 @@
+.section__list-item{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2 /*22px*/;
+    color: #000000;
+    padding: 25px 0 0;
+    margin: 0;
+}
+
+.section__list-item::before{
+    content: "\2022 \00A0" ;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .section__list-item {
+         font-size: 15px;
+         line-height: 1.47 /*22px*/;        
+     }
+}
+
+@media screen and (max-width: 420px) {
+    .section__list-item {
+         font-size: 12px;
+         line-height: 1.33 /*16px*/;        
+     }
+}
