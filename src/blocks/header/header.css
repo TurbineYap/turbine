@@ -1,7 +1,10 @@
-@import url(./__logo/header__logo.css);
+@import url(./__logo-img/header__logo-img.css);
+@import url(./__project-name/header__project-name.css);
 
 .header {
     background-image: url(../../images/background-top.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }

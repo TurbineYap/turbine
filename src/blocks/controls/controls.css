@@ -1,0 +1,32 @@
+@import url(./__play-button/controls__play-button.css);
+@import url(./__text/controls__text.css);
+@import url(./__name/controls__name.css);
+@import Url(./__timer/controls__timer.css);
+@import url(./__switcher/controls__switcher.css);
+@import url(./__progress-bar/controls__progress-bar.css);
+@import url(./__envelope/controls__envelope.css);
+@import url(./__text-switcher/controls__text-switcher.css);
+
+.controls {
+    display: flex;
+    width: calc(1234/1280*100vw);
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .controls {
+        width: calc(977/1024*100vw);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .controls {
+        width: calc(721/768*100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .controls {
+        width: calc(295/320*100vw);
+    }
+}

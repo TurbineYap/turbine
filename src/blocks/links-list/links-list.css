@@ -1,8 +1,31 @@
 @import url(./__link/links-list__link.css);
+@import url(./__item/links-list__item.css);
 
 .links-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: calc(181/1245*100%);
+    width: calc(181/1280*100vw);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .links-list {
+        width: calc(169/1024*100vw);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .links-list {
+        width: calc(169/768*100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .links-list {
+        width: calc(138/320*100vw);
+        /*display: none;
+        visibility: hidden;*/
+    }
 }
