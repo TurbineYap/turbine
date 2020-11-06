@@ -13,6 +13,7 @@
 
 .root{
   /* background: url(./images/background-top.png) center top/100% 30% no-repeat, url(./images/background-body.png) center bottom/100% 75% no-repeat;   */
+  font-family: 'Inter', ‘Arial’, sans-serif;
   background: url(../../images/background-top.png) center top/100% 100% no-repeat;  
   background-attachment:fixed;
 }
