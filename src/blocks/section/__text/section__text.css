@@ -9,3 +9,18 @@
     margin: 0;
     max-width: 716px;
 }
+
+@media screen and (max-width: 1024px) {
+    .section__text {
+         font-size: 15px;
+         line-height: 1.47 /*22px*/;        
+     }
+}
+
+@media screen and (max-width: 420px) {
+    .section__text {
+         font-size: 12px;
+         line-height: 1.33 /*16px*/;  
+         padding: 20px 0 0;      
+     }
+}

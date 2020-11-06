@@ -6,3 +6,17 @@
     line-height: 1.2/*22px*/;
     color: #000000;
 }
+
+@media screen and (max-width: 1024px) {
+    .form__link {
+         font-size: 15px;
+         line-height: 1.47 /*22px*/;        
+     }
+}
+
+@media screen and (max-width: 420px) {
+    .form__link {
+         font-size: 12px;
+         line-height: 1.33 /*16px*/;  
+     }
+}

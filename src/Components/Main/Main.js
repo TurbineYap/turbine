@@ -48,15 +48,13 @@ function Main() {
                 <span id="tel-input-error" class="form__input-error">Какая-то ошибка*</span>
                 <textarea name="" id="poem" required name="poem" className="form__input" placeholder="Стихи"></textarea>
                 <input type="checkbox" id="formCheckbox" required className="form__checkbox" />
-                <label htmlFor="formCheckbox" className="form__check-label">
-                    Согласен с <a href="#" target="_blank" className="form__link">офертой</a>
+                <label htmlFor="formCheckbox" className="form__check-label">               
+                Согласен с <a href="#" target="_blank" className="form__link">офертой</a>              
                 </label>
                 <input type="submit" value="Отправить" className="form__btn" />
             </form>
-            </section>
-            
-
-        </main>
+            </section>    
+        </main>        
     )
 }
 

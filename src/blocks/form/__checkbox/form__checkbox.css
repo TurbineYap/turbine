@@ -35,3 +35,9 @@
     border-color:  #1d8a65;     */
     background-color: #000000;
 }
+
+@media screen and (max-width: 420px) {
+    .form__checkbox + .form__check-label::before{
+        top: 10px;
+    }
+}

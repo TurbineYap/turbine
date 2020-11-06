@@ -9,3 +9,25 @@
     padding: 0 0 10px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1024px) {
+    .section__title {           
+        font-size: 46px;
+        line-height: 1.2; /*56px;*/        
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .section__title {           
+        font-size: 42px;
+        line-height: 1.2; /*51px;*/        
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .section__title {           
+        font-size: 32px;
+        line-height: 1.2; /*39px;*/        
+    }
+}

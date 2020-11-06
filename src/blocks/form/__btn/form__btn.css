@@ -20,3 +20,9 @@
     outline: none;
     transform: translate(0.5px,1px);
 }
+
+@media screen and (max-width: 768px) {
+    .form__btn{
+        width: 100%;
+    }
+}
