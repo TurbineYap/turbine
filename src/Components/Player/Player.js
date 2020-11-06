@@ -18,7 +18,7 @@ function Player () {
                     <div className="controls__progress-bar"></div>
                     <button className="controls__text-switcher controls__text-switcher_type_mobile">Текст песни</button>
                 </div>
-                <button className="controls__text-switcher">Текст песни</button>
+                <button className="controls__text-switcher shroud">Текст песни</button>
                 <button className="controls__switcher"></button>
             </div>
             <div className="text-window">

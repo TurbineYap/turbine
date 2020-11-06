@@ -16,4 +16,5 @@
   font-family: 'Inter', ‘Arial’, sans-serif;
   background: url(../../images/background-top.png) center top/100% 100% no-repeat;  
   background-attachment:fixed;
+  color: white;
 }
