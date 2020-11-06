@@ -10,7 +10,7 @@
 }
 
 .section__list-item::before{
-    content: "— " ;
+    content: "\2022 \00A0" ;
     color: #000000;
     padding: 0;
     margin: 0;

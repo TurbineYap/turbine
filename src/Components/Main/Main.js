@@ -6,7 +6,7 @@ function Main() {
         <main className="main">
             <section className="main__section section">
                 <h2 className="section__title">
-                    О проекте
+                    О проекте.
             </h2>
                 <p className="section__text">
                     Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда он бесконечно рисует, когда придумывает истории, когда разговаривает с едой и игрушками — дети постоянно включены и что-то изобретают. Родители часто недооценивают это спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к этому. Давайте попробуем внимательнее присмотреться к нашим детям.
@@ -17,7 +17,7 @@ function Main() {
             </section>
             <section className="section main__section">
                 <h2 className="section__title">
-                    Как это работает
+                    Как это работает?
                 </h2>
                 <p className="section__text">
                     Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы записали и считаете, что это сильное высказывание. Мы собираем пул таких текстов и передаём их музыкантам. Артисты создают музыку на эти стихи. Мы продюсируем выпуск трека, возможно съёмки клипа и так далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн Дадн feat. Варя Карпова и Федя Быстров — Контур.
@@ -25,28 +25,36 @@ function Main() {
             </section>
             <section className="section main__section">
                 <h2 className="section__title">
-                    Тезисы
+                    Тезисы.
                 </h2>
                 <ul className="section__list">
-                    <li className="section__list-item">Дети никогда не прекращают творить и круто стараться быть на них похожими в этом</li>
-                    <li className="section__list-item">Детское бессознательное помогает родителям понять, что происходит внутри семьи</li>
-                    <li className="section__list-item">Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней</li>
+                    <li className="section__list-item">Дети никогда не прекращают творить и круто стараться быть на них похожими в этом.</li>
+                    <li className="section__list-item">Детское бессознательное помогает родителям понять, что происходит внутри семьи.</li>
+                    <li className="section__list-item">Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней.</li>
                     <li className="section__list-item">Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми.</li>
                 </ul>
             </section>
-            <form action="index.html" method="POST" className="main__form form">
-                <h2 className="form__title">Форма</h2>
-                <input type="text" id="name" required name="name" className="form__input" placeholder="Имя и фамилия автора"/>
-                <input type="email" id="email" required name="email" className="form__input" placeholder="Почта"/>
-                <input type="tel" id="name" required name="name" className="form__input" placeholder="Телефон"/>
-                <textarea name="" id="poem" required name="poem" cols="30" rows="10" className="form__input" placeholder="Стихи"></textarea>
-                
-                    <input type="checkbox" id="formCheckbox" required className="form__checkbox"/>
-                    <label htmlFor="formCheckbox" className="form__check-label">
-                        Согласен с <a href="#" className="form__link">офертой</a>
-                </label>       
-                <input type="submit" value="Отправить" className="form__btn"/>         
+            <section className="section main__section">
+            <h2 className="section__title">Форма.</h2>
+                <p className="section__text">
+                    Заполняя эту форму, вы становитесь частью проекта.
+                </p>
+            <form action="index.html" method="POST" className="main__form form">                
+                <input type="text" id="name" required name="name" className="form__input" placeholder="Имя и фамилия автора" />
+                <span id="name-input-error" class="form__input-error">Какая-то ошибка*</span>
+                <input type="email" id="email" required name="email" className="form__input" placeholder="Почта" />
+                <span id="email-input-error" class="form__input-error">Какая-то ошибка*</span>
+                <input type="tel" id="name" required name="name" className="form__input" placeholder="Телефон" />
+                <span id="tel-input-error" class="form__input-error">Какая-то ошибка*</span>
+                <textarea name="" id="poem" required name="poem" className="form__input" placeholder="Стихи"></textarea>
+                <input type="checkbox" id="formCheckbox" required className="form__checkbox" />
+                <label htmlFor="formCheckbox" className="form__check-label">
+                    Согласен с <a href="#" target="_blank" className="form__link">офертой</a>
+                </label>
+                <input type="submit" value="Отправить" className="form__btn" />
             </form>
+            </section>
+            
 
         </main>
     )

@@ -1,10 +1,11 @@
 .section__title {   
     font-family: Inter;
-    font-style: normal;
+    font-style: italic;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 1.2; /*36px;*/
+    font-size: 50px;
+    line-height: 1.2; /*61px;*/
     color: #000000;
     margin: 0;
-    padding: 0 0 19px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
 }

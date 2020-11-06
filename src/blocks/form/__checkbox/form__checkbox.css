@@ -19,17 +19,19 @@
     left: 0;
     top: 27px;
     cursor: pointer;
-    transition: box-shadow ease 0.2s;
+    /* transition: box-shadow ease 0.2s; */
 }
-.form__checkbox:hover + .form__check-label::before{
+
+/* .form__check-label:hover:before{
     box-shadow: 2px 3px 3px 0px rgb(0 0 0 / 40%);
-}
+} */
+
 .form__checkbox:checked + .form__check-label::before{
-   content: '\01F5F8';
+   /* content: '\01F5F8';
    color: #1d8a65;
     text-align: center;
     font-size: 25px;
     font-weight: 900;
-    border-color:  #1d8a65;
-    
+    border-color:  #1d8a65;     */
+    background-color: #000000;
 }

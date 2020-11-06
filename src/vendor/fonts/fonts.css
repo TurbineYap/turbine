@@ -10,3 +10,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Italic.eot');
+    src: url('Inter-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Inter-Italic.woff2') format('woff2'),
+        url('Inter-Italic.woff') format('woff'),
+        url('Inter-Italic.ttf') format('truetype'),
+        url('Inter-Italic.svg#Inter-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+

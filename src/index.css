@@ -15,14 +15,17 @@
 
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__input/form__input.css);
-@import url(./blocks/form/__title/form__title.css);
+@import url(./blocks/form/__input/form__input_type_error.css);
+@import url(./blocks/form/__input-error/form__input-error.css);
 @import url(./blocks/form/__checkbox/form__checkbox.css);
+@import url(./blocks/form/__checkbox/__checkbox_type_error.css);
 @import url(./blocks/form/__check-label/form__check-label.css);
 @import url(./blocks/form/__link/form__link.css);
 @import url(./blocks/form/__btn/form__btn.css);
 
 
 #root{
-    background: url(./images/background-top.png) center top/100% 25% no-repeat, url(./images/background-body.png) center bottom/100% 75% no-repeat;
-  
+    /* background: url(./images/background-top.png) center top/100% 30% no-repeat, url(./images/background-body.png) center bottom/100% 75% no-repeat;   */
+    background: url(./images/background-top.png) center top/100% 100% no-repeat;  
+    background-attachment:fixed;
 }

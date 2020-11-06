@@ -1,5 +1,5 @@
 .form__btn{
-    width: 650px;
+    width: 600px;
     border-radius: 30px;
     display: block;
     border: solid #000000 2px;
@@ -7,10 +7,16 @@
     margin: 16px 0 0;
     background-color: transparent;
     cursor: pointer;
-    transition: box-shadow ease 0.2s;
+    transition: all ease-in-out 0.2s;
 }
 
 .form__btn:hover, .form__btn:focus, .form__btn:active{    
     box-shadow: 8px 4px 11px 1px rgb(0 0 0 / 40%);
     outline: none;
+}
+
+.form__btn:active{    
+    box-shadow: 4px 2px 5px 1px rgb(0 0 0 / 40%);
+    outline: none;
+    transform: translate(0.5px,1px);
 }
