@@ -1,0 +1,5 @@
+.controls__play-button_clicked {
+    background-image: url(../../../../images/pause-button.svg);
+    width: 16px;
+    height: 16px;
+}
