@@ -1,0 +1,29 @@
+.controls__play-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url(../../../images/play-button.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 20px;
+    max-width: 20px;
+    height: 16px;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .controls__play-button {
+        min-width: 18px;
+        max-width: 18px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .controls__play-button {
+        min-width: 16px;
+        max-width: 16px;
+        height: 13px;
+    }
+}

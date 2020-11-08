@@ -1,0 +1,9 @@
+@import url(./__img/close-button__img.css);
+
+.close-button {
+    width: 29px;
+    height: 29px;
+    background: none;
+    border: white 2px solid;
+    border-radius: 100%;
+}

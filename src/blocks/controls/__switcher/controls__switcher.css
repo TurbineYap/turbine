@@ -1,0 +1,19 @@
+.controls__switcher {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url(../../../images/switcher-button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .controls__switcher {
+        width: 16px;
+        height: 16px;
+    }
+}
