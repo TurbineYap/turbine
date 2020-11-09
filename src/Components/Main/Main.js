@@ -39,7 +39,7 @@ function Main() {
                 <p className="section__text">
                     Заполняя эту форму, вы становитесь частью проекта.
                 </p>
-            <form action="index.html" method="POST" className="main__form form">                
+            <form action="index.html" className="main__form form">                
                 <input type="text" id="name" required name="name" className="form__input" placeholder="Имя и фамилия автора" />
                 <span id="name-input-error" className="form__input-error">Какая-то ошибка*</span>
                 <input type="email" id="email" required name="email" className="form__input" placeholder="Почта" />
