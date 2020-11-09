@@ -41,11 +41,11 @@ function Main() {
                 </p>
             <form action="index.html" method="POST" className="main__form form">                
                 <input type="text" id="name" required name="name" className="form__input" placeholder="Имя и фамилия автора" />
-                <span id="name-input-error" class="form__input-error">Какая-то ошибка*</span>
+                <span id="name-input-error" className="form__input-error">Какая-то ошибка*</span>
                 <input type="email" id="email" required name="email" className="form__input" placeholder="Почта" />
-                <span id="email-input-error" class="form__input-error">Какая-то ошибка*</span>
+                <span id="email-input-error" className="form__input-error">Какая-то ошибка*</span>
                 <input type="tel" id="name" required name="name" className="form__input" placeholder="Телефон" />
-                <span id="tel-input-error" class="form__input-error">Какая-то ошибка*</span>
+                <span id="tel-input-error" className="form__input-error">Какая-то ошибка*</span>
                 <textarea name="" id="poem" required name="poem" className="form__input" placeholder="Стихи"></textarea>
                 <input type="checkbox" id="formCheckbox" required className="form__checkbox" />
                 <label htmlFor="formCheckbox" className="form__check-label">               

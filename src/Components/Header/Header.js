@@ -1,41 +1,31 @@
 import React from 'react';
-import logoPath from '../../images/logo.svg';
-import projectNamePath from '../../images/project-name.svg';
+import SvgLogo from '../../images/SvgLogo.js';
+import SvgProjectName from '../../images/SvgProjectName';
 import Player from '../Player/Player';
-import closeButtonPath from '../../images/close-button.svg';
+import SvgCloseButton from '../../images/SvgCloseButton';
+import streamings from '../../utils/streamings.json';
 
 function Header () {
     return (
     <header className="header">
         <div className="links">
-            <a className="logo" href="p">
-                <img className="logo__img" src={logoPath} alt="Крепость"></img>
+            <a className="logo" href="https://marshakbooks.ru">
+                <SvgLogo className="logo__img" />
             </a>
-            <button className="list-switcher shroud">Стриминги</button>
+            <button className="list-switcher">Стриминги</button>
             <ul className="links-list">
-                <li className="links-list__item">
+                <li key="close-button" className="links-list__item">
                     <button className="close-button">
-                        <img className="close-button__img" src={closeButtonPath} alt="Крестик"></img>
+                        <SvgCloseButton className="close-button__img" />
                     </button>
                 </li>
-                <li className="links-list__item">
-                    <a className="links-list__link" href="https://music.yandex.ru/home">Яндекс.Музыка ↗</a>
-                </li>
-                <li className="links-list__item">
-                    <a className="links-list__link" href="https://www.spotify.com">Spotify ↗</a>
-                </li>
-                <li className="links-list__item">
-                    <a className="links-list__link" href="https://music.apple.com/us/browse">Apple Music ↗</a>
-                </li>
-                <li className="links-list__item">
-                    <a className="links-list__link" href="https://vk.com/vkmusic">VK Music ↗</a>
-                </li>
+                {streamings.map((streaming, index) => <li key={index} className="links-list__item"><a target="_blank" rel="noreferrer" className="links-list__link" href={streaming.link}>{streaming.name}</a></li>)}
             </ul>
         </div>
         <h1 className="header__project-name">
-            <img className="header__logo-img" src={projectNamePath} alt="Название проекта"></img>
+           <SvgProjectName className="header__logo-img" />
         </h1>
-        <Player></Player>
+        <Player />
     </header>
     )
 }

@@ -1,5 +1,22 @@
+@import url(./__default-player/player__default-player.css);
+@import url(./__controls/player__controls.css);
+@import url(./__play-button/player__play-button.css);
+@import url(./__text/player__text.css);
+@import url(./__track-title/player__track-title.css);
+@import url(./__timer/player__timer.css);
+@import url(./__switcher/player__switcher.css);
+@import url(./__progress-bar/player__progress-bar.css);
+@import url(./__envelope/player__envelope.css);
+@import url(./__text-switcher/player__text-switcher.css);
+@import url(./__text-window/player__text-window.css);
+@import url(./_text-window-header/player__text-window-header.css);
+@import url(./__track/player__track.css);
+@import url(./__current-track-title/player__current-track-title.css);
+@import url(./__current-track/player__current-track.css);
+@import url(./__track-list/player__track-list.css);
+
 .player {
-    padding: calc(210/1280*100vw) 0 20px;
+    padding: 210px 0 20px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -7,18 +24,18 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .player {
-        padding-top: calc(182/680*100vh);
+        padding-top: 182px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .player {
-        padding-top: calc(182/768*100vh);
+        padding-top: 182px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .player {
-        padding-top: calc(249/700*100vh);
+        padding-top: 182px;
     }
 }

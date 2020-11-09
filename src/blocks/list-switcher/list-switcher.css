@@ -1,10 +1,22 @@
 .list-switcher {
     background: transparent;
-    width: calc(98/320*100vw);
-    height: calc(29/700*100vh);
+    width: 98px;
+    height: 29px;
     border: white 2px solid;
     border-radius: 30px;
     color: white;
     font-size: 12px;
     line-height: 14.52px;
+    transition: opacity .5s cubic-bezier(.27,.64,.81,.75);
+}
+
+.list-switcher:hover {
+    opacity: .6;
+}
+
+@media screen and (min-width: 768px) {
+    .list-switcher {
+        visibility: hidden;
+        display: none;
+    }
 }

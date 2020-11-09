@@ -1,9 +1,0 @@
-.text-window__text_type_song-link {
-    cursor: pointer;
-    font-style: normal;
-    
-}
-
-.text-window__text_type_song-link:hover {
-    font-style: italic;
-}
