@@ -1,10 +1,17 @@
 import React from 'react';
 
-function Track ({ trackName, isSelected }) {
+function Track(props){
 
+
+
+console.log(props.src);
     return(
-        <span className={`text-window__song ${isSelected && 'text-window__song_state_selected'}`}>{trackName}</span>
+        
+     <li className="player__track">
+         <span className="player__track-title" >
+             {props.title}
+         </span>
+     </li>
     )
 }
-
-export default Track
+export default Track;

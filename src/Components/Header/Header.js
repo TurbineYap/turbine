@@ -5,7 +5,12 @@ import Player from '../Player/Player';
 import SvgCloseButton from '../../images/SvgCloseButton';
 import streamings from '../../utils/streamings.json';
 
+
+
 function Header () {
+
+
+
     return (
     <header className="header">
         <div className="links">
@@ -26,6 +31,7 @@ function Header () {
            <SvgProjectName className="header__logo-img" />
         </h1>
         <Player />
+
     </header>
     )
 }
