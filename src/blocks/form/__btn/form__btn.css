@@ -21,6 +21,12 @@
     transform: translate(0.5px,1px);
 }
 
+.form__btn:disabled{    
+    box-shadow: none;
+    outline: none;
+    transform: none;
+}
+
 @media screen and (max-width: 768px) {
     .form__btn{
         width: 100%;

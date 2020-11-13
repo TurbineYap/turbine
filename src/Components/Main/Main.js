@@ -1,4 +1,5 @@
 import React from 'react';
+import FormVal from '../Form/Form';
 
 function Main() {
 
@@ -39,20 +40,8 @@ function Main() {
                 <p className="section__text">
                     Заполняя эту форму, вы становитесь частью проекта.
                 </p>
-            <form action="index.html" className="main__form form">                
-                <input type="text" id="name" required name="name" className="form__input" placeholder="Имя и фамилия автора" />
-                <span id="name-input-error" class="form__input-error">Какая-то ошибка*</span>
-                <input type="email" id="email" required name="email" className="form__input" placeholder="Почта" />
-                <span id="email-input-error" class="form__input-error">Какая-то ошибка*</span>
-                <input type="tel" id="name" required name="name" className="form__input" placeholder="Телефон" />
-                <span id="tel-input-error" class="form__input-error">Какая-то ошибка*</span>
-                <textarea name="" id="poem" required name="poem" className="form__input" placeholder="Стихи"></textarea>
-                <input type="checkbox" id="formCheckbox" required className="form__checkbox" />
-                <label htmlFor="formCheckbox" className="form__check-label">               
-                Согласен с <a href="#" target="_blank" className="form__link">офертой</a>              
-                </label>
-                <input type="submit" value="Отправить" className="form__btn" />
-            </form>
+                <FormVal></FormVal>
+           
             </section>    
         </main>        
     )

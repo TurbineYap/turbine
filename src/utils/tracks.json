@@ -1,0 +1,21 @@
+[
+    {
+        "trackAuthor":"Author Name №1",
+        "trackName": "Track name №1",
+        "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        "id": "1"
+    },
+    {
+        "trackAuthor":"Author Name №2",
+        "trackName": "Track name №2",
+        "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        "id": "2"
+    },
+    {
+        "trackAuthor":"Author Name №3",
+        "trackName": "Track name №3",
+        "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+        "id": "3"
+    }
+]
+

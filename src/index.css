@@ -2,10 +2,20 @@
 @import url(./vendor/normalize.css);
 
 @import url(./blocks/root/root.css);
- @import url(./blocks/header/header.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/logo/logo.css);
 @import url(./blocks/links-list/links-list.css);
+@import url(./blocks/close-button/close-button.css);
+@import url(./blocks/list-switcher/list-switcher.css);
 @import url(./blocks/links/links.css);
-
+@import url(./blocks/player/player.css);
+@import url(./blocks/player/__play-button/_clicked/player__play-button_clicked.css);
+@import url(./blocks/player/__switcher/_clicked/player__switcher_clicked.css);
+@import url(./blocks/player/__current-track-title/_state-of-player/_unwrapped/player__current-track_state-of-player_unwrapped.css);
+@import url(./blocks/player/__text-switcher/_type/_mobile/player__text-switcher_type_mobile.css);
+@import url(./blocks/player/__envelope/_state-of-player/unwrapped/player__envelope_state-of-player_unwrapped.css);
+@import url(./blocks/player/__track-title/_state/_selected/player__track-title_state_selected.css);
+@import url(./blocks/shroud/shroud.css);
 
 @import url(./blocks/main/main.css);
 @import url(./blocks/section/section.css);

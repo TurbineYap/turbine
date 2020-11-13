@@ -1,0 +1,5 @@
+.player__current-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Яндекс.Музыка ↗",
+        "link": "https://music.yandex.ru/home"
+    },
+    {
+        "name": "Spotify ↗",
+        "link": "https://www.spotify.com"
+    },
+    {
+        "name": "Apple Music ↗",
+        "link": "https://music.apple.com/us/browse"
+    },
+    {
+        "name": "VK Music ↗",
+        "link": "https://vk.com/vkmusic"
+    }
+]
