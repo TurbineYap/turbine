@@ -1,5 +1,29 @@
 .player__current-track {
     display: flex;
+    align-self: start;
     justify-content: space-between;
-    align-items: baseline;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .player__current-track {
+        width: calc(561/1024*100vw);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__current-track {
+        width: calc(397/768*100vw);
+        grid-column: 2/4;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__current-track {
+        grid-row: 1;
+        grid-column: 2;
+        max-width: 240px;
+        margin-bottom: 12px;
+    }
 }

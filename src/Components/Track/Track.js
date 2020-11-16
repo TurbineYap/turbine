@@ -1,9 +1,12 @@
 import React from 'react';
 
-function Track ({ trackName, isSelected }) {
+function Track ({ id, onClick, title, author }) {
 
+    const handleClick = () => {
+        onClick(id);
+    }
     return(
-        <span className={`text-window__song ${isSelected && 'text-window__song_state_selected'}`}>{trackName}</span>
+        <span onClick={handleClick}>{author} — {title}</span>
     )
 }
 

@@ -1,24 +1,21 @@
 .player__progress-bar {
-    width: calc(1150/1280*100vw);
     height: 2px;
-    margin-top: 13px;
-    background-image: linear-gradient(to right, white 0px 40%, rgba(255, 255, 255, 0.3) 40% 1150px)
+    background-image: linear-gradient(to right, white 0px 0%, rgba(255, 255, 255, 0.3) 0% 1150px);
+    align-self: start;
+    grid-row: 2;
+    grid-column: 3/-3;
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .player__progress-bar {
-        width: calc(895/1024*100vw);
+        width: calc(561/1024*100vw);
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .player__progress-bar {
-        width: calc(639/768*100vw);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .player__progress-bar {
-        width: calc(240/320*100vw);
+        width: calc(397/768*100vw);
+        grid-column: 2/4;
     }
 }

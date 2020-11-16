@@ -1,0 +1,31 @@
+.player__clip-button {
+    height: 35px;
+    width: 94px;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    background-image: url(../../../images/clip-btn.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .player__clip-button {
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__clip-button {
+        width: 87px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__clip-button {
+        width: 74px;
+        height: 31px;
+    }
+}

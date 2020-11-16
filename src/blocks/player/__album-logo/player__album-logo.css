@@ -1,0 +1,33 @@
+.player__album-logo {
+    width: 176px;
+    height: 176px;
+    grid-column: 1;
+    grid-row: 1/-1;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .player__album-logo {
+        width: 164px;
+        height: 164px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__album-logo {
+        width: 112px;
+        height: 112px;
+        grid-column: 2;
+        grid-row: -2/-1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__album-logo {
+        grid-row: 3;
+        grid-column: 2;
+        width: 240px;
+        height: 240px;
+        margin: 21px 0;
+    }
+}

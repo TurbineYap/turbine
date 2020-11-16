@@ -12,11 +12,11 @@
     width: 620px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
     .player__current-track-title {
         font-size: 18px;
         line-height: 22px;
-        width: calc(567/768*100vw);
+        width: 100%;
     }
 }
 
@@ -24,6 +24,5 @@
     .player__current-track-title {
         font-size: 14px;
         line-height: 19px;
-        width: calc(192/320*100vw);
     }
 }
