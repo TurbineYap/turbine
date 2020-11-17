@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 767px) {
     .header__project-name {
-        margin: 267px 0 0;
+        margin: 267px 0 300px;
         width: 270px;
         height: 82px;
     }

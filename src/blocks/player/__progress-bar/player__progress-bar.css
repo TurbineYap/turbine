@@ -3,7 +3,7 @@
     background-image: linear-gradient(to right, white 0px 0%, rgba(255, 255, 255, 0.3) 0% 1150px);
     align-self: start;
     grid-row: 2;
-    grid-column: 3/-3;
+    grid-column: 3;
     width: 100%;
 }
 
@@ -16,6 +16,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .player__progress-bar {
         width: calc(397/768*100vw);
+        min-width: 480px;
         grid-column: 2/4;
     }
 }

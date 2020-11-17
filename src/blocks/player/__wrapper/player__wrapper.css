@@ -1,0 +1,23 @@
+.player__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__wrapper {
+        grid-template-columns: minmax(min-content, max-content) 112px repeat(2, minmax(min-content, max-content));
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__wrapper {
+        grid-template-columns: repeat(3, minmax(min-content, max-content));
+        grid-template-rows: repeat(5, minmax(min-content, max-content));
+        justify-items: center;
+        justify-content: center;
+        gap:0;
+        column-gap: 12px;
+    }
+}

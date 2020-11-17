@@ -1,0 +1,4 @@
+.player__progress-bar_player-state_wrapped {
+    width: calc(1150/1280*100vw);
+    grid-column: 2;
+}

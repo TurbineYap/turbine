@@ -14,7 +14,7 @@
 @import url(./blocks/player/__current-track-title/_state-of-player/_unwrapped/player__current-track_state-of-player_unwrapped.css);
 @import url(./blocks/player/__controls-envelope/_state-of-player/unwrapped/player__controls-envelope_state-of-player_unwrapped.css);
 @import url(./blocks/player/__track-title/_state/_selected/player__track-title_state_selected.css);
-@import url(./blocks/player/__progress-bar/_state/_long/player__progress-bar_state_long.css);
+@import url(./blocks/player/__progress-bar/_player-state/_wrapped/player__progress-bar_player-state_wrapped.css);
 @import url(./blocks/player/__album-logo/_position/_video/player__album-logo_possition_video.css);
 @import url(./blocks/player/__play-button/_position/_video/player__play-button_position_video.css);
 @import url(./blocks/player/__current-track/_position/_video/player__current-track_position_video.css);
@@ -22,6 +22,9 @@
 @import url(./blocks/player/__progress-bar/_position/_video/player__progress-bar_position_video.css);
 @import url(./blocks/player/__text-window/_position/_video/player__text-window_position_video.css);
 @import url(./blocks/player/__text-switcher/_position/_video/player__text-switcher_position_video.css);
+@import url(./blocks/player/__wrapper/_wrapped/player__wrapper_wrapped.css);
+@import url(./blocks/player/__current-track/_player-state/_wrapped/player__current-track_state_wrapped.css);
+@import url(./blocks/player/__play-button/_menu-state/_wrapped/player__play-button_menu-state_wrapped.css);
 @import url(./blocks/shroud/shroud.css);
 
 @import url(./blocks/main/main.css);

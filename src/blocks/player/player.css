@@ -17,13 +17,11 @@
 @import url(./__clip-button/player__clip-button.css);
 @import url(./__album-logo/player__album-logo.css);
 @import url(./__track-content-btns/player__track-content-btns.css);
+@import url(./__wrapper/player__wrapper.css);
 
 .player {
     padding: 210px 0 20px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(min-content, max-content));
-    grid-template-rows: repeat(3, minmax(min-content, max-content));
-    gap: 20px;
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -40,12 +38,6 @@
 
 @media screen and (max-width: 767px) {
     .player {
-        grid-template-columns: repeat(3, minmax(min-content, max-content));
-        grid-template-rows: repeat(5, minmax(min-content, max-content));
-        justify-items: center;
-        justify-content: center;
-        gap:0;
-        column-gap: 12px;
-        padding: 0;
+        max-height: 30px;
     }
 }
