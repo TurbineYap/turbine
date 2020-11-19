@@ -1,5 +1,0 @@
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .player__current-track_state-of-player_unwrapped {
-        width: calc(422/494*100%)
-    }
-}

@@ -14,7 +14,17 @@
     grid-row: 1;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .player__play-button {
+        grid-column: 2/3;
+        min-width: 18px;
+        max-width: 18px;
+        height: 15px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .player__play-button {
         min-width: 18px;
         max-width: 18px;

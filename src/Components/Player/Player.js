@@ -5,7 +5,7 @@ import Track from '../Track/Track';
 import { Howl } from 'howler';
 import albumLogoPath from '../../images/Album.png';
 
-function Player () {
+function Player ( { isPlayerWrappedSetter, isPlayerWrapped } ) {
     const [ tracks, setTracks ] = useState([]);
     const [ selectedTrack, setSelectedTrack ] = useState({});
     const [ selectedAudio, setSelectedAudio ] = useState({});
@@ -13,7 +13,7 @@ function Player () {
     const [ timer, setTimer ] = useState(0);
     const [ timerToRender, setTimerToRender ] = useState('0:00');
     const [ progressBarPosition, setProgressBarPosition ] = useState(0);
-    const [ isPlayerWrapped, setIsPlayerWrapped ] = useState(true);
+    const [ renderSongText, setRenderSongText ] = useState(false);
 
     useEffect(() => {
         /*const initialTracks = getTracks();*/ //загрузка с сервера
@@ -115,45 +115,41 @@ function Player () {
 
     const onPlayerSwitcherClick = () => {
         const state = isPlayerWrapped ? false : true;
-        setIsPlayerWrapped(state);
+        isPlayerWrappedSetter(state);
+    }
+
+    const onTextSwitcherClick = () => {
+        setRenderSongText(!renderSongText);
     }
 
     return(
-        <section className="player">
+        <section className={`player ${isPlayerWrapped ? '' : 'player_state_unwrapped'}`}>
             <div className={`player__wrapper ${isPlayerWrapped ? 'player__wrapper_wrapped' : ''}`}>
                     <button onClick={onPlayPauseClick}
                         className={`
-                        player__play-button 
-                        ${isMusicPlaying ? "player__play-button_clicked" : ""} 
-                        ${selectedTrack.video !== '' ? 'player__play-button_position_video' : ''}
-                        ${isPlayerWrapped ? 'player__play-button_menu-state_wrapped' : ''}
+                            player__play-button 
+                            ${isMusicPlaying ? "player__play-button_clicked" : ""} 
+                            ${isPlayerWrapped ? 'player__play-button_menu-state_wrapped' : ''}
                         `}
                     >
                     </button>
-                        <div 
-                        className={
-                            `
-                            player__current-track ${selectedTrack.video !== '' ? 'player__current-track_position_video' : ''}
-                            ${isPlayerWrapped ? 'player__current-track_player-state_wrapped' : ''}
-                            `}
-                        >
+                        <div className={`player__current-track ${isPlayerWrapped ? 'player__current-track_player-state_wrapped' : ''}`}>
                             <h2 className="player__current-track-title">{selectedTrack.author} — {selectedTrack.title}</h2>
                             <p className="player__timer">{timerToRender}</p>
                         </div>
                         <button className={`player__switcher ${isPlayerWrapped ? '' : 'player__switcher_clicked'}`} onClick={onPlayerSwitcherClick}></button>
-                        <div className={`player__progress-bar ${isPlayerWrapped ? 'player__progress-bar_player-state_wrapped' : ''} ${selectedTrack.video !== '' ? 'player__progress-bar_position_video' : ''}`} style={{backgroundImage: `linear-gradient(to right, white 0px ${progressBarPosition}%, rgba(255, 255, 255, 0.3) 0% 1150px)`}}></div>
+                        <div className={`player__progress-bar ${isPlayerWrapped ? 'player__progress-bar_player-state_wrapped' : ''}`} style={{backgroundImage: `linear-gradient(to right, white 0px ${progressBarPosition}%, rgba(255, 255, 255, 0.3) 0% 1150px)`}}></div>
                         { isPlayerWrapped ? '' :
                             <>
-                                <img className={`player__album-logo ${selectedTrack.video !== '' ? 'player__album-logo_position_video' : ''}`} src={albumLogoPath} alt="Логотип альбома" />
-                                <div className={`player__track-content-btns ${selectedTrack.video !== '' ? 'player__track-content-btns_position_video' : ''}`}>
-                                    {selectedTrack.video !== '' && <button className="player__clip-button"></button>}
-                                    <button className={`player__text-switcher ${selectedTrack.video !== '' ? 'player__text-switcher_position_video' : ''}`}>Текст песни</button>
+                                <img className={`player__album-logo`} src={albumLogoPath} alt="Логотип альбома" />
+                                <div className={`player__track-content-btns `}>
+                                    {selectedTrack.video !== '' && <a href={selectedTrack.video}><button className="player__clip-button"></button></a>}
+                                    <button onClick={onTextSwitcherClick} className={`player__text-switcher `}>Текст песни</button>
                                 </div>
-                                
-                                <div className={`player__text-window ${selectedTrack.video !== '' ? 'player__text-window_position_video' : ''}`}>
-                                    <p className="player__text-window-header">Релизы</p>
-                                    <p className="player__text shroud">Стихи</p>
-                                    <ul className="player__track-list">
+                                <div className="player__text-window">
+                                    <p className="player__text-window-header">{`${renderSongText ? 'Текст песни:' : 'Релизы'}`}</p>
+                                    <p className={`player__text ${renderSongText ? '' : 'shroud'}`}>{selectedTrack.text}</p>
+                                    <ul className={`player__track-list ${renderSongText ? 'shroud' : ''}`}>
                                         {tracks.map(track => <li className="player__track" key={track.id}><Track 
                                             author={track.author}
                                             title={track.title} 

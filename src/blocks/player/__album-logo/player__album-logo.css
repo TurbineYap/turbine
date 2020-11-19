@@ -10,6 +10,7 @@
     .player__album-logo {
         width: 164px;
         height: 164px;
+        grid-column: 1;
     }
 }
 
@@ -17,8 +18,8 @@
     .player__album-logo {
         width: 112px;
         height: 112px;
-        grid-column: 2;
-        grid-row: -2/-1;
+        grid-column: 2/3;
+        grid-row: 3;
     }
 }
 

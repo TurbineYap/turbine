@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .header__project-name_player-state_unwrapped {
+        filter: blur(2px);
+    }
+}

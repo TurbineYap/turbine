@@ -1,5 +1,5 @@
 .player__text {
-    width: calc(378/1150*100%);
+    width: 374px;
     margin: 0;
     white-space: break-spaces;
     font-size: 20px;
@@ -12,10 +12,23 @@
     overflow: hidden;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .player__text-window {
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__text-window {
+        width: 340px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .player__text {
         font-size: 14px;
         line-height: 19px;
+        width: 320px;
     }
 }
 

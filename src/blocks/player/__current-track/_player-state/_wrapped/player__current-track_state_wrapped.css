@@ -1,4 +1,10 @@
 .player__current-track_player-state_wrapped {
-    width: calc(1150/1280*100vw);
     grid-column: 2;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .player__current-track_player-state_wrapped {
+        width: calc(240/320*100vw);
+    }
 }

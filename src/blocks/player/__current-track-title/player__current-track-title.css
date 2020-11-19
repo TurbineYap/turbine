@@ -9,7 +9,6 @@
     align-self: baseline;
     white-space: nowrap; 
     overflow: hidden;
-    width: 620px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {

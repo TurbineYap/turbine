@@ -1,0 +1,8 @@
+@media screen and (max-width: 767px) {
+    .player_state_unwrapped {
+        padding-bottom: 25px;
+        bottom: -320px;
+        transform: translateY(-320px);
+        transition: transform 1s cubic-bezier(.27,.64,.81,.75);
+    }
+}

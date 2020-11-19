@@ -4,18 +4,11 @@
     justify-content: space-between;
     grid-column: 3;
     grid-row: 1;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .player__current-track {
-        width: calc(561/1024*100vw);
-    }
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .player__current-track {
-        width: calc(397/768*100vw);
-        min-width: 480px;
         grid-column: 2/4;
     }
 }
@@ -24,7 +17,7 @@
     .player__current-track {
         grid-row: 1;
         grid-column: 2;
-        max-width: 240px;
+        width: calc(240/320*100vw);
         margin-bottom: 12px;
     }
 }
