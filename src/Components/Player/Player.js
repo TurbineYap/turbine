@@ -116,6 +116,7 @@ function Player ( { isPlayerWrappedSetter, isPlayerWrapped } ) {
     const onPlayerSwitcherClick = () => {
         const state = isPlayerWrapped ? false : true;
         isPlayerWrappedSetter(state);
+        setRenderSongText(false);
     }
 
     const onTextSwitcherClick = () => {
@@ -152,6 +153,7 @@ function Player ( { isPlayerWrappedSetter, isPlayerWrapped } ) {
                                     <ul className={`player__track-list ${renderSongText ? 'shroud' : ''}`}>
                                         {tracks.map(track => <li className="player__track" key={track.id}><Track 
                                             author={track.author}
+                                            feat={track.feat}
                                             title={track.title} 
                                             id={track.id}
                                             onClick={onTrackClick}

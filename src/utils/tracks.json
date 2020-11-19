@@ -1,7 +1,8 @@
 [
     {
-        "title": "Хадн Дадн feat. Варя Карпова и Федя Быстров",
+        "title": "Хадн Дадн",
         "author": "Контур",
+        "feat": "Варя Карпова и Федя Быстров",
         "src": "https://raw.githubusercontent.com/goldfire/howler.js/master/examples/player/audio/80s_vibe.mp3",
         "id": "1",
         "video": "",

@@ -19,12 +19,27 @@
 @import url(./__wrapper/player__wrapper.css);
 
 .player {
+        width: calc(1230/1280*100vw);
+        max-width: 1230px;
         padding-bottom: 20px;
         margin: 0 25px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+        .player {
+                width: calc(974/1024*100vw);
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+        .player {
+                width: calc(718/768*100vw);
+        }
+}
+
 @media screen and (max-width: 767px) {
         .player {
+                width: calc(293/320*100vw);
                 z-index: 1;
                 position: absolute;
                 bottom: 0;

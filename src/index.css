@@ -23,6 +23,7 @@
 @import url(./blocks/links/_player-state/_unwrapped/links_player-state_unwrapped.css);
 @import url(./blocks/header/__project-name/_player-state/_unwrapped/header__project-name_player-state_unwrapped.css);
 @import url(./blocks/shroud/shroud.css);
+@import url(./blocks/feat/feat.css);
 
 @import url(./blocks/main/main.css);
 @import url(./blocks/section/section.css);
