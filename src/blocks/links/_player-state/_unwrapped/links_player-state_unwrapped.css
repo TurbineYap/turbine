@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .links_player-state_unwrapped {
+        filter: blur(2px);
+    }
+}

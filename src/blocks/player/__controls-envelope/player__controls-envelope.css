@@ -1,0 +1,6 @@
+.player__controls-envelope {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 10px;
+}

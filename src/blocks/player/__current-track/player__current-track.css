@@ -1,5 +1,23 @@
 .player__current-track {
     display: flex;
+    align-self: start;
     justify-content: space-between;
-    align-items: baseline;
+    grid-column: 3;
+    grid-row: 1;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__current-track {
+        grid-column: 2/4;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__current-track {
+        grid-row: 1;
+        grid-column: 2;
+        width: calc(240/320*100vw);
+        margin-bottom: 12px;
+    }
 }

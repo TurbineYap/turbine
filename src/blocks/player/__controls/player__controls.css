@@ -1,4 +1,5 @@
 .player__controls {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 20px minmax(min-content, max-content);
+    gap: 20px;
 }

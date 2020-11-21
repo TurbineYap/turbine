@@ -1,0 +1,24 @@
+.player__track-content-btns {
+    display: flex;
+    align-items: flex-start;
+    align-self: start;
+    justify-self: end;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .player__track-content-btns_position_video {
+        grid-column: 4/5;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__track-content-btns {
+        grid-row: 4;
+        grid-column: 2;
+        justify-self: stretch;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}

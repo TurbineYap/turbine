@@ -1,17 +1,13 @@
 import React from 'react';
 
-function Track(props){
+function Track ({ id, onClick, title, author, feat }) {
 
-
-
-console.log(props.src);
+    const handleClick = () => {
+        onClick(id);
+    }
     return(
-        
-     <li className="player__track">
-         <span className="player__track-title" >
-             {props.title}
-         </span>
-     </li>
+        <span onClick={handleClick}> {title} — {author} {feat ? <span className="feat">feat</span> : ''} {feat ? feat : ''} </span>
     )
 }
-export default Track;
+
+export default Track

@@ -1,29 +1,29 @@
 .header__project-name {
-    margin: 95px 0 0;
     width: 720px;
     height: 226px;
+    margin: 98px 0 210px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .header__project-name {
-        margin: 75px 0 0;
         width: 600px;
         height: 186px;
+        margin: 75px 0 182px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .header__project-name {
-        margin: 244px 0 0;
         width: 620px;
         height: 192px;
+        margin: 244px 0 353px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .header__project-name {
-        margin: 267px 0 0;
         width: 270px;
         height: 82px;
+        margin: 244px 0 249px;
     }
 }

@@ -1,3 +1,4 @@
 .player__switcher_clicked {
     background-image: url(../../../../images/switcher-cross.svg);
+    grid-column: -1/-2;
 }

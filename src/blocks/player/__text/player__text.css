@@ -1,5 +1,5 @@
 .player__text {
-    width: calc(378/1150*100%);
+    width: 374px;
     margin: 0;
     white-space: break-spaces;
     font-size: 20px;
@@ -16,6 +16,7 @@
     .player__text {
         font-size: 14px;
         line-height: 19px;
+        width: 320px;
     }
 }
 

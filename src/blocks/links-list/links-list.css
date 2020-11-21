@@ -1,4 +1,4 @@
-@import url(./__link/links-list__link.css);
+@import url(./__btn/links-list__btn.css);
 @import url(./__item/links-list__item.css);
 
 .links-list {
@@ -12,8 +12,8 @@
 
 @media screen and (max-width: 767px) {
     .links-list {
-        width: calc(138/320*100vw);
-        display: none;
-        visibility: hidden;
+        width: calc(150/320*100vw);
+        overflow: hidden;
+        max-height: 35px;
     }
 }

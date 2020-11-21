@@ -1,0 +1,26 @@
+.player__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content)) 1fr  minmax(min-content, max-content) 24px;
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-gap: 20px;
+    grid-row-gap: 7px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .player__wrapper {
+        grid-template-columns: 18px 112px 1fr minmax(min-content, max-content) 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__wrapper {
+        grid-template-columns: 16px 1fr 16px;
+        grid-template-rows: repeat(5, minmax(min-content, max-content));
+        justify-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        overflow: hidden;
+        z-index: 2;
+        grid-gap: 12px;
+    }
+}

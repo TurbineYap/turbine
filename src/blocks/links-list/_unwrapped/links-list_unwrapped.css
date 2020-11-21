@@ -1,0 +1,4 @@
+.links-list_unwrapped {
+    max-height: 200px;
+    transition: max-height 1s cubic-bezier(.27,.64,.81,.75), 1s cubic-bezier(.27,.64,.81,.75);
+}
